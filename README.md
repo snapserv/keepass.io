@@ -8,7 +8,7 @@ keepass.io is a simple KeePass database reader written in NodeJS.
 Apache License (version 2)
 
 ## Prerequisites ##
-keepass.io requires version 0.6.x of Node.js or higher. If you want to run the tests or work on model, you'll want [Mocha](https://github.com/visionmedia/mocha) and [should.js](https://github.com/visionmedia/should.js/).
+keepass.io requires version 0.8.x of Node.js or higher. If you want to run the tests or work on model, you'll want [Mocha](https://github.com/visionmedia/mocha) and [should.js](https://github.com/visionmedia/should.js/).
 
 ## Installing with [NPM](http://npmjs.org) ##
 
