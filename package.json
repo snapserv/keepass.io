@@ -14,7 +14,7 @@
             "manager",
             "secure"
     ],
-    "version": "0.1.0",
+    "version": "0.2.0",
     "author": "Pascal Mathis <dev@snapserv.net> (https://www.snapserv.net)",
     "main": "./lib/index.js",
     "repository": {
@@ -22,8 +22,9 @@
         "url": "https://github.com/NeoXiD/keepass.io"
     },
     "dependencies": {
-        "classjs": ">0.7.x",
-        "jspack": "git://github.com/NeoXiD/node-jspack#master"
+        "classjs": ">=0.7.0",
+        "jspack": "git://github.com/NeoXiD/node-jspack#master",
+        "xml2js": ">=0.2.6"
     },
     "engines": {
         "node": "*"
