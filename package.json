@@ -14,11 +14,11 @@
             "manager",
             "secure"
     ],
-    "version": "0.2.3",
+    "version": "0.2.4",
     "author": "Pascal Mathis <dev@snapserv.net> (https://www.snapserv.net)",
     "main": "./lib/index.js",
     "scripts": {
-        "test": "vows --spec test/*.js"
+        "test": "mocha --color --reporter spec test/"
     },
     "repository": {
         "type": "git",
