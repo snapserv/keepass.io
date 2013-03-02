@@ -14,7 +14,7 @@
             "manager",
             "secure"
     ],
-    "version": "0.2.2",
+    "version": "0.2.3",
     "author": "Pascal Mathis <dev@snapserv.net> (https://www.snapserv.net)",
     "main": "./lib/index.js",
     "scripts": {
