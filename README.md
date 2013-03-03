@@ -8,7 +8,7 @@ keepass.io is a simple KeePass database reader written in NodeJS.
 Apache License (version 2)
 
 ## Prerequisites ##
-keepass.io requires version 0.8.x of Node.js or higher. If you want to run the tests or work on model, you'll want [Mocha](https://github.com/visionmedia/mocha) and [should.js](https://github.com/visionmedia/should.js/).
+keepass.io requires version 0.8.x of Node.js or higher. If you want to run the tests or work on keepass.io, you'll want [Mocha](https://github.com/visionmedia/mocha) and [should.js](https://github.com/visionmedia/should.js/).
 
 ## Installing with [NPM](http://npmjs.org) ##
 
@@ -29,12 +29,12 @@ db.setCredentials({
 });
 
 db.load('database.kdbx', function(error, data) {
-if(error) throw error;
-console.log(data);
+	if(error) throw error;
+	console.log(data);
 });
 ```
 
-Thats it. If your database does not have a keyfile, you can just omit the *keyfile* key when calling *setCredentials*. If the loading was successful, *data* will be an object with alle the meta data, groups and entries in it.
+Thats it. If your database does not have a keyfile, you can just omit the *keyfile* key when calling *setCredentials*. If the loading was successful, *data* will be an object with all the meta data, groups and entries in it.
 
 ### test.kdbx data, formatted as JSON ###
 ```json
