@@ -14,8 +14,8 @@
             "manager",
             "secure"
     ],
-    "version": "0.2.6",
-    "author": "Pascal Mathis <dev@snapserv.net> (https://www.snapserv.net)",
+    "version": "0.2.7",
+    "author": "Pascal Mathis <dev@snapserv.net> (http://www.snapserv.net)",
     "main": "./lib/index.js",
     "scripts": {
         "test": "mocha --color --reporter spec test/"
@@ -34,6 +34,6 @@
         "should": "*"
     },
     "engines": {
-        "node": "0.8.x"
+        "node": ">=0.8"
     }
 }
