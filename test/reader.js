@@ -157,6 +157,7 @@ describe('Loading the test database', function() {
             entry.fields.should.be.an.instanceof(Object);
             entry.fields['Credit Card Number'].should.equal("12345678910");
             entry.fields['Name on Card'].should.equal("Mr. Anderson");
+            entry.fields['Security Code'].should.equal("1234");
 
             done();
         });
