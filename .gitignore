@@ -11,6 +11,7 @@ lib-cov
 pids
 logs
 results
+dev-test
 
 # Node.js rules
 node_modules
