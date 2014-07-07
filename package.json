@@ -10,6 +10,7 @@
 	"dependencies": {
 		"dejavu": "0.4.4",
 		"chai": "1.9.1",
-		"async": "0.9.0"
+		"async": "0.9.0",
+		"xml2js": "0.4.4"
 	}
 }
