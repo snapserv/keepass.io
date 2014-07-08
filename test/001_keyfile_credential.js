@@ -49,10 +49,10 @@ describe('Instantiating a KeyfileCredential', function()  {
 			credential.getType().should.equal('binary');
 		});
 
-		it('#getHash() should match MD5 hash `d58bfd78eb2e1e9af82f7dee21ffafd8`', function() {
+		it('#getHash() should match MD5 hash `b4f805336b96b064385a5c71dfd12ed1`', function() {
 			var hash = credential.getHash();
 			hash = crypto.createHash('md5').update(hash).digest('hex');
-			hash.should.equal('d58bfd78eb2e1e9af82f7dee21ffafd8');
+			hash.should.equal('b4f805336b96b064385a5c71dfd12ed1');
 		});
 	});
 });
