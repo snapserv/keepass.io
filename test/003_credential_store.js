@@ -35,7 +35,7 @@ describe('Instantiating a CredentialStore', function() {
 		describe('when adding a PasswordCredential with `morpheus` before', function() {
 			before(function() {
 				credentialStore.add(new kpio.Credentials.Password('morpheus'));
-			})
+			});
 
 			it('should not throw any errors', function() {
 				(function() {
