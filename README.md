@@ -1,6 +1,6 @@
 # keepass.io #
 
-[![build status](https://secure.travis-ci.org/NeoXiD/keepass.io.png?branch=master)](http://travis-ci.org/NeoXiD/keepass.io)
+[![build status](https://secure.travis-ci.org/NeoXiD/keepass.io.png?branch=stable)](http://travis-ci.org/NeoXiD/keepass.io)
 
 keepass.io is a simple KeePass database reader written in NodeJS.
 
