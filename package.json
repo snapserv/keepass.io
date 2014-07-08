@@ -2,15 +2,23 @@
 	"name": "keepass.io",
 	"description": "KDB4 database writer and reader in Node.js",
 	"author": "Pascal Mathis <dev@snapserv.net>",
+	"version": "1.0.0",
 	"main": "./lib/index.js",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/NeoXiD/keepass.io"
+	},
+	"scripts": {
+		"test": "mocha --color --reporter spec test/*.js"
 	},
 	"dependencies": {
 		"dejavu": "0.4.4",
 		"chai": "1.9.1",
 		"async": "0.9.0",
 		"xml2js": "0.4.4"
+	},
+	"devDependencies": {
+		"should": "4.0.4",
+		"mocha": "1.20.1"
 	}
 }
