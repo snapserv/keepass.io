@@ -4,10 +4,10 @@ var helpers = require('./000_test_helpers');
 var kpio = require('../lib');
 
 describe('Instantiating a KeyfileCredential', function()  {
-	it('should throw a KpioGenericError when providing no keyfile', function() {
+	it('should throw a KpioArgumentError when providing no keyfile', function() {
 		(function() {
 			new kpio.Credentials.Keyfile();	
-		}).should.throw(kpio.Errors.Generic);			
+		}).should.throw(kpio.Errors.Argument);			
 	});
 
 	it('should throw a KpioGenericError when providing an inexistant keyfile', function() {

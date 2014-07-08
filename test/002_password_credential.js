@@ -4,16 +4,16 @@ var helpers = require('./000_test_helpers');
 var kpio = require('../lib');
 
 describe('Instantiating a PasswordCredential', function()  {
-	it('should throw a KpioGenericError when providing no password', function() {
+	it('should throw a KpioArgumentError when providing no password', function() {
 		(function() {
 			new kpio.Credentials.Password();	
-		}).should.throw(kpio.Errors.Generic);	
+		}).should.throw(kpio.Errors.Argument);	
 	});
 
-	it('should throw a KpioGenericError when providing an invalid type', function() {
+	it('should throw a KpioArgumentError when providing an invalid type', function() {
 		(function() {
 			new kpio.Credentials.Password([]);
-		}).should.throw(kpio.Errors.Generic);
+		}).should.throw(kpio.Errors.Argument);
 	});
 
 	describe('by providing the password `nebuchadnezzar`', function() {
