@@ -12,6 +12,7 @@ pids
 logs
 results
 dev-test
+coverage
 
 # Node.js rules
 node_modules
