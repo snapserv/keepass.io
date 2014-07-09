@@ -1,7 +1,7 @@
 keepass.io
 ==========
 
-[![License](http://img.shields.io/badge/license-GPLv3-blue.svg)](https://github.com/NeoXiD/keepass.io/blob/develop/LICENSE.md)
+[![License](http://img.shields.io/badge/license-GPLv3-blue.svg)](https://github.com/NeoXiD/keepass.io/blob/master/LICENSE.md)
 [![Build Status](http://img.shields.io/travis/NeoXiD/keepass.io/develop.svg)](http://travis-ci.org/NeoXiD/keepass.io)
 [![Dependency Status](http://img.shields.io/david/NeoXiD/keepass.io.svg)](https://david-dm.org/NeoXiD/keepass.io)
 [![Coverage Status](http://img.shields.io/coveralls/NeoXiD/keepass.io/develop.svg)](https://coveralls.io/r/NeoXiD/keepass.io?branch=develop)
