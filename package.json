@@ -9,15 +9,17 @@
 		"url": "https://github.com/NeoXiD/keepass.io"
 	},
 	"scripts": {
-		"test": "mocha --color --reporter spec test/*.js"
+		"test": "mocha --reporter spec"
 	},
 	"dependencies": {
-		"dejavu": "0.4.4",
-		"async": "0.9.0",
-		"xml2js": "0.4.4"
+		"dejavu": "~0.4.4",
+		"async": "~0.9.0",
+		"xml2js": "~0.4.4"
 	},
 	"devDependencies": {
-		"should": "4.0.4",
-		"mocha": "1.20.1"
+		"should": "~4.0.4",
+		"mocha": "~1.20.1",
+		"istanbul": "~0.3.0",
+		"coveralls": "~2.11.1"
 	}
 }
