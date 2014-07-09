@@ -29,3 +29,20 @@ describe('Transforming the key `nebuchadnezzarneotrinitymorpheus`', function() {
 		});
 	});
 });
+
+describe('Building a masterkey with predefined values', function() {
+	var masterKey = null;
+
+	it('should not throw any errors', function() {
+		var compositeHash = 'nebuchadnezzarneotrinitymorpheus';
+		var masterSeed = 'trinityapoctrinityapoctrinityapoc';
+		var transformSeed = 'morpheusmorpheusmorpheusmorpheus';
+		var transformRounds = 1000;
+		masterKey = Cryptography.buildMasterKey(compositeHash, masterSeed, transformSeed, transformRounds);
+	});
+
+	it('should match `c0153df85e6118fb19a8abfcde44a8fe66076fc364a86f81e72880d76aa4dff0`', function() {
+		masterKey = masterKey.toString('hex');
+		masterKey.should.equal('c0153df85e6118fb19a8abfcde44a8fe66076fc364a86f81e72880d76aa4dff0');
+	});
+});
