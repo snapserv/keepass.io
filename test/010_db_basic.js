@@ -11,7 +11,6 @@ describe('Opening the example database', function() {
 		var db = new kpio.Database();
 		db.addCredential(new kpio.Credentials.Password('morpheus'));
 		db.loadFile(dbPath, function(err, api) {
-			console.log(api);
 			(function() {
 				if(err) throw err;
 			}).should.throw(kpio.Errors.Database);
