@@ -1,0 +1,21 @@
+# Generic rules
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+dev-test
+coverage
+test/temp/*
+!test/temp/.gitkeep
+
+# Node.js rules
+node_modules
+npm-debug.log
