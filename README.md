@@ -1,11 +1,11 @@
 keepass.io
 ==========
 
-[![License](http://img.shields.io/badge/license-GPLv3-blue.svg)](https://github.com/NeoXiD/keepass.io/blob/development/LICENSE.md)
-[![Build Status](http://img.shields.io/travis/NeoXiD/keepass.io/development.svg)](http://travis-ci.org/NeoXiD/keepass.io)
+[![License](http://img.shields.io/badge/license-GPLv3-blue.svg)](https://github.com/NeoXiD/keepass.io/blob/develop/LICENSE.md)
+[![Build Status](http://img.shields.io/travis/NeoXiD/keepass.io/develop.svg)](http://travis-ci.org/NeoXiD/keepass.io)
 [![Dependency Status](http://img.shields.io/david/NeoXiD/keepass.io.svg)](https://david-dm.org/NeoXiD/keepass.io)
-[![Coverage Status](http://img.shields.io/coveralls/NeoXiD/keepass.io/development.svg)](https://coveralls.io/r/NeoXiD/keepass.io?branch=development)
-[![NPM version](http://img.shields.io/npm/v/keepass.io.svg)](http://badge.fury.io/js/keepass.io)
+[![Coverage Status](http://img.shields.io/coveralls/NeoXiD/keepass.io/develop.svg)](https://coveralls.io/r/NeoXiD/keepass.io?branch=develop)
+[![NPM version](http://img.shields.io/npm/v/keepass.io.svg)](https://npmjs.org/package/keepass.io)
 [![Gittip](http://img.shields.io/gittip/NeoXiD.svg)](https://www.gittip.com/NeoXiD)
 
 
