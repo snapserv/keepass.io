@@ -13,7 +13,9 @@ logs
 results
 dev-test
 coverage
-native/build
+build
+examples/*
+!examples/*.js
 test/temp/*
 !test/temp/.gitkeep
 

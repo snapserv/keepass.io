@@ -2,7 +2,7 @@
 	"targets": [
 		{
 			"target_name": "kpion",
-			"sources": [ "kpion.cpp" ],
+			"sources": [ "native/kpion.cpp" ],
 			"libraries": [
 				"-lcryptopp"
 			],
