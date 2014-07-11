@@ -13,6 +13,7 @@ logs
 results
 dev-test
 coverage
+native/build
 test/temp/*
 !test/temp/.gitkeep
 
