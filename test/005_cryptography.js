@@ -60,14 +60,14 @@ describe('Transforming the key `nebuchadnezzarneotrinitymorpheus`', function() {
 		maybeIt('and 500 rounds should match MD5 hash `e88bdbde00dae90ffe5f885748797487`', function() {
 			var hash = kpion.transformKey(keyBuffer, seedBuffer, 500);
 			hash = new Buffer(hash, 'hex');	// Node.js v0.8.x workaround - see https://github.com/joyent/node/issues/4128
-			hash = crypto.createHash('md5').update(hash, 'hex').digest('hex');
+			hash = crypto.createHash('md5').update(hash).digest('hex');
 			hash.should.equal('e88bdbde00dae90ffe5f885748797487');
 		});
 
 		maybeIt('and 1000 rounds should match MD5 hash `09cc3aabadb8b7cccf3031518114f29e`', function() {
 			var hash = kpion.transformKey(keyBuffer, seedBuffer, 1000);
 			hash = new Buffer(hash, 'hex');	// Node.js v0.8.x workaround - see https://github.com/joyent/node/issues/4128
-			hash = crypto.createHash('md5').update(hash, 'hex').digest('hex');
+			hash = crypto.createHash('md5').update(hash).digest('hex');
 			hash.should.equal('09cc3aabadb8b7cccf3031518114f29e');
 		});
 	});
