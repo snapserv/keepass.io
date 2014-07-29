@@ -1,6 +1,6 @@
 {
 	"name": "keepass.io",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Node.js library for reading and writing KeePass databases",
 	"keywords": [
 		"keepass",
