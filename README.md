@@ -14,6 +14,7 @@ keepass.io
 - **Password and/or Keyfile credentials**: keepass.io supports both of the most common used credential types for KeePass databases.
 - **Powerful API**: This library offers you a powerful API, which even allows you raw access to the database, so even unsupported third-party fields can be modified.
 - **Joyfully simple and flexible**: I've built keepass.io to be easily understandable and a joy to use. It's built with JavaScript and tries to provide a solid foundation for modifying KDBX databases.
+- **Stunning performance**: To further improve performance, keepass.io even includes an optional native library, which will help while performing the key transformations. If your system should not have the *Crypto++ Dev Libraries* installed, it will automatically fallback to the slower Node.js methods.
 
 -
 **Note**: *keepass.io is currently under active development. As such, while this library is well-tested, the API might change at anytime. Consider using it in production applications only if you're comfortable following a changelog and updating your usage accordingly.*

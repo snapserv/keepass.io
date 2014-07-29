@@ -1,6 +1,6 @@
 {
 	"name": "keepass.io",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Node.js library for reading and writing KeePass databases",
 	"keywords": [
 		"keepass",
@@ -26,6 +26,7 @@
 	
 	"main": "./lib/index.js",
 	"scripts": {
+		"install": "(node-gyp rebuild 2>&1) || (echo 'DO NOT WORRY ABOUT THESE MESSAGES. KEEPASS.IO WILL FALLBACK TO SLOWER NODE.JS METHODS, SO THERE ARE NO LIMITATIONS EXCEPT SLOWER PERFORMANCE.'; exit 0)",
 		"test": "mocha --reporter spec"
 	},
 	"engines": {
@@ -35,7 +36,8 @@
 	"dependencies": {
 		"dejavu": "~0.4.4",
 		"async": "~0.9.0",
-		"xml2js": "~0.4.4"
+		"xml2js": "~0.4.4",
+		"nan": "~1.2.0"
 	},
 	"devDependencies": {
 		"should": "~4.0.4",

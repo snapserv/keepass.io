@@ -13,6 +13,9 @@ logs
 results
 dev-test
 coverage
+build
+examples/*
+!examples/*.js
 test/temp/*
 !test/temp/.gitkeep
 
