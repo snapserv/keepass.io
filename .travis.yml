@@ -1,6 +1,9 @@
 language: node_js
 node_js:
-    - "0.11"
-    - "0.10"
-    - "0.8"
+  - "0.11"
+  - "0.10"
+  - "0.8"
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install -qq -y libcrypto++-dev
 after_script: NODE_ENV=test istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
