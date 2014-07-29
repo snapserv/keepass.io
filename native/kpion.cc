@@ -40,14 +40,13 @@ NAN_METHOD(kpion_transform_key) {
 
 	// Convert Node.js arguments to C variables
 	int keyTransformationRounds = args[2]->NumberValue();
-	struct String untransformedKey = {
-		.value = node::Buffer::Data(args[0]->ToObject()),
-		.length = node::Buffer::Length(args[0]->ToObject())
-	};
-	struct String unpaddedSeed = {
-		.value = node::Buffer::Data(args[1]->ToObject()),
-		.length = node::Buffer::Length(args[1]->ToObject())
-	};
+	struct String untransformedKey;
+	struct String unpaddedSeed;
+
+	untransformedKey.value = node::Buffer::Data(args[0]->ToObject());
+	untransformedKey.length = node::Buffer::Length(args[0]->ToObject());
+	unpaddedSeed.value = node::Buffer::Data(args[1]->ToObject());
+	unpaddedSeed.length = node::Buffer::Length(args[1]->ToObject());
 
 	// Pad seed / key for AES256 cipher (32 bytes)
 	struct String paddedSeed;
