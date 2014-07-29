@@ -34,7 +34,7 @@ describe('Transforming the key `nebuchadnezzarneotrinitymorpheus`', function() {
 		});
 	});
 
-	describe('with the native method', function() {
+	describe('with the native key transformation library', function() {
 		var keyBuffer, seedBuffer;
 
 		before(function() {

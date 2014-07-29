@@ -36,7 +36,8 @@
 	"dependencies": {
 		"dejavu": "~0.4.4",
 		"async": "~0.9.0",
-		"xml2js": "~0.4.4"
+		"xml2js": "~0.4.4",
+		"nan": "~1.2.0"
 	},
 	"devDependencies": {
 		"should": "~4.0.4",
