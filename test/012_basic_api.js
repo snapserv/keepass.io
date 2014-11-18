@@ -167,6 +167,6 @@ describe('Opening the example database', function() {
 					count.should.equal(0);
 				});
 			});
-		})
+		});
 	});
 });

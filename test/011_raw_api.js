@@ -67,7 +67,7 @@ describe('Opening the example database', function() {
 				(function() {
 					db.getRawApi().set(rawDatabase || {});
 				}).should.not.throw();
-			})
+			});
 		});
 		
 		describe('and then calling compatibility layer method #setRaw()', function() {
@@ -81,7 +81,7 @@ describe('Opening the example database', function() {
 				(function() {
 					dbCompatApi.setRaw(rawDatabase || {});
 				}).should.not.throw();
-			})
+			});
 		});
 	});
 });
