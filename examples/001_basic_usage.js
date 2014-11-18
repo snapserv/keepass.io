@@ -23,13 +23,13 @@ db.addCredential(new kpio.Credentials.Keyfile(keyfilePath));
 // the two parameters 'err' and 'api'. Before accessing 'api', you should always check if
 // there was an error and if required, abort. 'api' however represents the KeePass.IO api
 // object, which you can use to retrieve data from the database.
-db.loadFile(databasePath, function(err, api) {
+db.loadFile(databasePath, function(err) {
 	if(err) throw err;
 
-	// api.getRaw() returns a reference to the whole database object as JSON. Usually, you
-	// should be able to modify the data directly. If 'pass by reference' should not be possible
-	// somewhere, you can also use api.setRaw(newDatabaseObject) later on.
-	var rawDatabase = api.getRaw();
+    // db.getRawApi() returns the raw API of keepass.io. By calling the method get(), we will
+    // get the whole database object as JSON. Remember though that it isn't a reference, so any
+    // changes you make to the object are lost. Please use set() to keep them.
+	var rawDatabase = db.getRawApi().get();
 
 	// This is just a short example, which will print the original database name and then
 	// modify it to "KeePass.IO rocks!". To see all possible attributes, use JSON.stringify
@@ -45,9 +45,9 @@ db.loadFile(databasePath, function(err, api) {
 	db.addCredential(new kpio.Credentials.Password('morpheus'));
 	db.addCredential(new kpio.Credentials.Keyfile(keyfilePath));
 
-	// As mentioned above, this command is optional because you receive a reference to
-	// the original JSON object of the database.
-	// api.setRaw(rawDatabase);
+	// As mentioned above, this command is required as otherwise the changed data would not
+	// be saved. Never forget that - or don't complain about lost data otherwise.
+	db.getRawApi().set(rawDatabase);
 
 	// This is going to save the current database state into the given file. Once again,
 	// a callback function is required. Please always check 'err' within your callback function,
