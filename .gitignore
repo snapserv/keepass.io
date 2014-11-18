@@ -22,3 +22,6 @@ test/temp/*
 # Node.js rules
 node_modules
 npm-debug.log
+
+# IDE rules
+.settings
