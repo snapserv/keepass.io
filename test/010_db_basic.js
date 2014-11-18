@@ -10,7 +10,7 @@ describe('Opening the example database', function() {
 	it('with invalid credentials should throw a KpioDatabaseError', function(done) {
 		var db = new kpio.Database();
 		db.addCredential(new kpio.Credentials.Password('morpheus'));
-		db.loadFile(dbPath, function(err, api) {
+		db.loadFile(dbPath, function(err) {
 			(function() {
 				if(err) throw err;
 			}).should.throw(kpio.Errors.Database);
@@ -19,7 +19,7 @@ describe('Opening the example database', function() {
 	});
 
 	describe('with valid credentials', function() {
-		var db = null, dbApi = null;
+		var db = null;
 
 		before(function() {
 			db = new kpio.Database();
@@ -28,16 +28,15 @@ describe('Opening the example database', function() {
 		});
 
 		it('should not throw any errors', function(done) {
-			db.loadFile(dbPath, function(err, api) {
+			db.loadFile(dbPath, function(err) {
 				if(err) return done(err);
-				dbApi = api;
 				return done();
 			});
 		});
 
 		describe('and calling #saveFile()', function() {
 			it('with the same credentials should not throw any error', function(done) {
-				db.saveFile(newDbPath, function(err, api) {
+				db.saveFile(newDbPath, function(err) {
 					return done(err);
 				});
 			});
@@ -46,7 +45,7 @@ describe('Opening the example database', function() {
 				db.resetCredentials();
 				db.addCredential(new kpio.Credentials.Password('morpheus'));
 
-				db.saveFile(newDbPath, function(err, api) {
+				db.saveFile(newDbPath, function(err) {
 					return done(err);
 				});
 			});
