@@ -34,17 +34,18 @@ db.addCredential(new kpio.Credentials.Keyfile('apoc.key'));
 db.loadFile(databasePath, function(err, api) {
     if(err) throw err;
 
-        var rawDatabase = api.getRaw();
-        console.log('Database name: ' + rawDatabase.KeePassFile.Meta.DatabaseName);
-        rawDatabase.KeePassFile.Meta.DatabaseName = 'KeePass.IO rocks!';
+    var rawDatabase = db.getRawApi().get();
+    console.log('Database name: ' + rawDatabase.KeePassFile.Meta.DatabaseName);
+    rawDatabase.KeePassFile.Meta.DatabaseName = 'KeePass.IO rocks!';
 
-        db.resetCredentials();
-        db.addCredential(new kpio.Credentials.Password('morpheus'));
-        db.addCredential(new kpio.Credentials.Keyfile('trinity.key'));
+    db.resetCredentials();
+    db.addCredential(new kpio.Credentials.Password('morpheus'));
+    db.addCredential(new kpio.Credentials.Keyfile('trinity.key'));
 
-        db.saveFile(newDatabasePath, function(err) {
-                if(err) throw err;
-        });
+    db.getRawApi().set(rawDatabase);
+    db.saveFile(newDatabasePath, function(err) {
+        if(err) throw err;
+    });
 });
 ```
 
