@@ -24,4 +24,6 @@ node_modules
 npm-debug.log
 
 # IDE rules
+*.sublime-project
+*.sublime-workspace
 .settings
