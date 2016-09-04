@@ -23,14 +23,14 @@ describe('Transforming the key `nebuchadnezzarneotrinitymorpheus`', function() {
 
 		it('and 500 rounds should match MD5 hash `81c673b0dc17ba4d1a674298fa679d5d`', function() {
 			var hash = Cryptography.transformKey(key, seed, iv, 500);
-			hash = Buffer.from(hash, 'binary');
+			hash = new Buffer(hash, 'binary');
 			hash = crypto.createHash('md5').update(hash).digest('hex');
 			hash.should.equal('81c673b0dc17ba4d1a674298fa679d5d');
 		});
 
 		it('and 1000 rounds should match MD5 hash `e19a4a8b5ed0f14d5061571a8591517d`', function() {
 			var hash = Cryptography.transformKey(key, seed, iv, 1000);
-			hash = Buffer.from(hash, 'binary');
+			hash = new Buffer(hash, 'binary');
 			hash = crypto.createHash('md5').update(hash).digest('hex');
 			hash.should.equal('e19a4a8b5ed0f14d5061571a8591517d');
 		});
